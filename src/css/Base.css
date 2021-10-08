@@ -1,0 +1,150 @@
+.container{
+    width: 400px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background: #ddd;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+header button{
+    padding: 0.35rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    background-color: #fc8dfc;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.cards{
+    width: 100%;
+    padding: 30px 10px;
+}
+
+.card{
+    min-height: 115px;
+    width: 100%;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 0 2px 4px 2px rgba(0,0,0,0.1);
+    margin: 1.5rem 0;
+}
+.done,.description{
+    padding: 1rem;
+
+}
+
+.card input[type="checkbox"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #1e90ff;
+}
+
+.card input[type="checkbox"]:hover, .card input[type="checkbox"]:active{
+    border: 5px solid #1e90ff;
+}
+
+.done{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description{
+    width: 85%;
+}
+
+.description h2{
+    height: 70%;
+    text-transform: capitalize;
+}
+.description .footer{
+    display: flex;
+    align-items: center;
+}
+
+.footer p{
+    font-weight: bold;
+    /* color: #1e90ff; */
+}
+.footer .due{
+    margin-left: auto;
+    color: #fff;
+    font-weight: bold;
+    background-color: rgba(255, 0, 0,0.7);
+    border-radius: 4px;
+}
+.footer .pad{
+    padding: 5px;
+}
+
+.footer button{
+    padding: 0.5rem 1rem;
+    margin-left: 15px;
+    background-color: #fc8dfc;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.container form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,0.1);
+    position: absolute;
+    background-color: rgb(253, 250, 250);
+    left: 5%;
+}
+.container form input{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border:1px solid #ced4da;
+    border-radius: 0.3rem;
+    background-clip: padding-box;
+    margin: 8px 0;
+    outline: none;
+    line-height: 1.5;
+}
+
+.container form input:focus, .container form input:hover{
+    border:1px solid #1e90ff;
+    box-shadow: 0px 0px 2px 2px rgba(30, 144, 255,0.4);
+}
+
+.container form button{
+    width: 100%;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0.35rem 0.75rem;
+    line-height: 1.5;
+    border-radius: 5px;
+    margin: 5px 0;
+    background: linear-gradient(#ffaaff,#fc8dfc,#c971c9);
+}
